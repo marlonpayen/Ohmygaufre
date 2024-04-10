@@ -32,7 +32,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 # UNCOMMENT FOR TESTING
-DEBUG = True
+#DEBUG = True
 #ALLOWED_HOSTS = []
 
 
