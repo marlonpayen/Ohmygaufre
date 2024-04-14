@@ -166,6 +166,7 @@ if not DEBUG:
 # UNCOMMENT FOR DEBUG MODE
 #HOST_SCHEME                     = "http://"
 
+DEBUG_PROPAGATE_EXCEPTIONS = True
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
