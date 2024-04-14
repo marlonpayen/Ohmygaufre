@@ -19,8 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 PROJECT_DIR=os.path.dirname(__file__)
 
 # Support env variables from .env file if defined
-env_path = load_dotenv(os.path.join(BASE_DIR, '.env'))
-load_dotenv(env_path)
+load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -29,8 +28,7 @@ load_dotenv(env_path)
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#COMMENT FOR TESTING
-DEBUG = False
+DEBUG = os.environ.get('DEBUG') == 'True'
 ALLOWED_HOSTS = ['ohmygaufre.onrender.com', '127.0.0.1', 'localhost']
 
 # UNCOMMENT FOR TESTING
