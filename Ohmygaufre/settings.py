@@ -160,6 +160,8 @@ if not DEBUG:
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
     SECURE_SSL_REDIRECT = True
+    
+    CSRF_TRUSTED_ORIGINS = ['https://ohmygaufre.onrender.com']
 
 # UNCOMMENT FOR DEBUG MODE
 #HOST_SCHEME                     = "http://"
