@@ -10,3 +10,5 @@ python manage.py collectstatic --no-input
 
 # Apply any outstanding database migrations
 python manage.py migrate
+
+python manage.py createsuperuser2 --username tomrectem --password 12345 --noinput --email 'tomrectem@gmail.com'
